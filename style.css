@@ -1,0 +1,77 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top:50ps;
+    flex-wrap: wrap;
+  }
+  .card {
+    width: 500px;
+    height: 470px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    background-color: #fff;
+    transition: transform 0.3s ease;
+    flex: 1 0 300px;
+    margin-bottom: 30px;
+  }
+  .card:hover {
+    transform: scale(1.05);
+  }
+  #about-card {
+    background-color: #a980d7;
+  }
+  #projects-card {
+    background-color: #bbe9e7;
+  }
+  #social-card {
+    background-color: #d6d5ef;
+  }
+  #spotify-widget {
+    margin-top: 50px;
+  }
+  #memoji {
+    margin-top: 50px;
+  }
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(2, lfr);
+    gap: 10px;
+  }
+  .project h3 {
+    margin-top: 0;
+  }
+  .photo-container {
+    width: 200px;
+    margin-top: 50px;
+    float: right;
+    animation: photoAnimation 2s infinite alternate;
+  }
+  
+  @keyframes photoAnimation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .photo-container img {
+    width: 100%;
+    border-radius: 10px;
+    float: right;
+  }
+  
+  #spotify-widget {
+    margin-top: 50px;
+    /* Add styles for Spotify widget */
+  }
+  
+  #memoji {
+    margin-top: 50px;
+    /* Add styles for your Memoji */
+  }
+  
